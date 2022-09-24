@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1 {
+            color: rebeccapurple;
+            text-align: center;
+        }
+        div {
+            display: inline-block;
+            height: 250px;
+            width: 250px;
+            background-color: lightblue;
+            border-radius: 10px;
+            border: solid 2px rebeccapurple;
+            margin-inline: 50px;
+            margin-bottom: 50px;
+        }
+        .contenedor{
+            width: 100%;
+            margin: auto;
+            background-color: white;
+            border: none;
+        }
+        
+    </style>
+    <h1>Welcome</h1>
+        <div class="contenedor">
+            {% for x in range(0,numero): %}
+            <div style ="background-color:{{color}}"></div>
+            {% endfor %}
+        </div>
+</body>
+</html>
